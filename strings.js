@@ -30,7 +30,7 @@ window.STRINGS = {
     "activity.pairs.title": "Reinforcement Learning from Human Feedback for Localizing Quality Agricultural Advice using Gen AI",
     "nav.activity": "activity",
     "activity.title": "Out in the world",
-    "activity.note": "\u2014 talks, rooms I have stood in front of, and the odd masterclass",
+    "activity.note": "\u2014 talks and rooms I\u2019ve stood in front of",
     "activity.summit.title": "Making Generative AI Work for Farmers: Aligning Agricultural AI with Human Feedback",
     "activity.summit.meta": "60-minute masterclass \u00b7 India AI Impact Summit 2026 \u00b7 JAN AI Pavilion, Bharat Mandapam, New Delhi",
     "activity.summit.body": "A session on what it actually takes to make generative AI safe, actionable and context-aware for farming advice \u2014 and on deploying Farmer.Chat, which reaches smallholder farmers through text, voice and photographs.",
@@ -120,7 +120,7 @@ window.STRINGS = {
 
     "startups.title": "I help startups build",
     "startups.note": "— advisory, hands on keyboard, not slideware",
-    "startups.lead": "Three companies I've helped build the AI for — one of them right now",
+    "startups.lead": "Companies I\u2019ve helped build the AI for",
     "startups.cue": "open",
     "startups.more": "— and a handful of others over the years. Ask me.",
 
@@ -179,7 +179,7 @@ window.STRINGS = {
     "activity.pairs.title": "\u092e\u093e\u0928\u0935 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u0938\u0947 \u0930\u093f\u0907\u0902\u092b\u094b\u0930\u094d\u0938\u092e\u0947\u0902\u091f \u0932\u0930\u094d\u0928\u093f\u0902\u0917: \u091c\u0947\u0928\u0947\u0930\u0947\u091f\u093f\u0935 AI \u0938\u0947 \u0915\u0943\u0937\u093f \u0938\u0932\u093e\u0939 \u0915\u093e \u0938\u094d\u0925\u093e\u0928\u0940\u092f\u0915\u0930\u0923",
     "nav.activity": "\u0917\u0924\u093f\u0935\u093f\u0927\u093f",
     "activity.title": "\u092c\u093e\u0939\u0930 \u0915\u0940 \u0926\u0941\u0928\u093f\u092f\u093e \u092e\u0947\u0902",
-    "activity.note": "\u2014 \u091f\u0949\u0915, \u092e\u0902\u091a, \u0914\u0930 \u0915\u092d\u0940-\u0915\u092d\u093e\u0930 \u092e\u093e\u0938\u094d\u091f\u0930\u0915\u094d\u0932\u093e\u0938",
+    "activity.note": "\u2014 \u091f\u0949\u0915 \u0914\u0930 \u0935\u0947 \u092e\u0902\u091a \u091c\u0939\u093e\u0901 \u092e\u0948\u0902 \u0916\u0921\u093c\u093e \u0939\u0941\u0906",
     "activity.summit.title": "\u0915\u093f\u0938\u093e\u0928\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u091c\u0947\u0928\u0947\u0930\u0947\u091f\u093f\u0935 AI: \u0915\u0943\u0937\u093f AI \u0915\u094b \u092e\u093e\u0928\u0935 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u0938\u0947 \u0905\u0932\u093e\u0907\u0928 \u0915\u0930\u0928\u093e",
     "activity.summit.meta": "60 \u092e\u093f\u0928\u091f \u0915\u093e \u092e\u093e\u0938\u094d\u091f\u0930\u0915\u094d\u0932\u093e\u0938 \u00b7 India AI Impact Summit 2026 \u00b7 \u092d\u093e\u0930\u0924 \u092e\u0902\u0921\u092a\u092e, \u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940",
     "activity.summit.body": "\u0916\u0947\u0924\u0940 \u0915\u0940 \u0938\u0932\u093e\u0939 \u0915\u0947 \u0932\u093f\u090f \u091c\u0947\u0928\u0947\u0930\u0947\u091f\u093f\u0935 AI \u0915\u094b \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924, \u0909\u092a\u092f\u094b\u0917\u0940 \u0914\u0930 \u0938\u0902\u0926\u0930\u094d\u092d-\u0938\u091c\u0917 \u092c\u0928\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093e\u0915\u093c\u0908 \u0915\u094d\u092f\u093e \u0932\u0917\u0924\u093e \u0939\u0948 \u2014 \u0914\u0930 Farmer.Chat \u0915\u094b \u0924\u0948\u0928\u093e\u0924 \u0915\u0930\u0928\u0947 \u092a\u0930, \u091c\u094b \u091f\u0947\u0915\u094d\u0938\u094d\u091f, \u0906\u0935\u093e\u091c\u093c \u0914\u0930 \u0924\u0938\u094d\u0935\u0940\u0930\u094b\u0902 \u0915\u0947 \u091c\u093c\u0930\u093f\u090f \u0915\u093f\u0938\u093e\u0928\u094b\u0902 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u0924\u093e \u0939\u0948\u0964",
@@ -269,7 +269,7 @@ window.STRINGS = {
 
     "startups.title": "मैं स्टार्टअप्स बनाने में मदद करता हूँ",
     "startups.note": "— सलाह, हाथ कीबोर्ड पर — सिर्फ़ स्लाइड नहीं",
-    "startups.lead": "तीन कंपनियाँ जिनका AI बनाने में मैंने मदद की — एक अभी भी जारी है",
+    "startups.lead": "\u0915\u0902\u092a\u0928\u093f\u092f\u093e\u0901 \u091c\u093f\u0928\u0915\u093e AI \u092c\u0928\u093e\u0928\u0947 \u092e\u0947\u0902 \u092e\u0948\u0902\u0928\u0947 \u092e\u0926\u0926 \u0915\u0940",
     "startups.cue": "खोलें",
     "startups.more": "— और सालों में कुछ और भी। पूछ लीजिए।",
 
