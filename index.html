@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sanyam Singh — field notebook</title>
+<meta name="description" content="Sanyam Singh, Lead ML at Digital Green and founding AI consultant. I build AI systems for places where being wrong has a cost — and help startups get from demo to production.">
+<meta name="author" content="Sanyam Singh">
+
+<meta property="og:title" content="Sanyam Singh — field notebook">
+<meta property="og:description" content="Lead ML at Digital Green. I build AI systems that have to survive the real world, and help startups get there.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="portrait.jpg">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%23f3ead6'/%3E%3Cpath d='M6 8h20M6 14h20M6 20h20M6 26h20' stroke='%23c9bda2' stroke-width='1'/%3E%3Cpath d='M9 24c3-9 7-13 9-13s2 3-1 7 1 3 5-4' stroke='%232b3a8f' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Courier+Prime:wght@400;700&family=Newsreader:opsz,wght@6..72,300..600&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans+Oriya:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!--
+  ─────────────────────────────────────────────────────────────
+  FIELD NOTEBOOK — a portfolio that behaves like a notebook.
+
+  Translations live in strings.js, one object per language.
+  English is the source of truth: any key missing from another
+  language falls back to English automatically, so a partial
+  translation is always safe to ship.
+
+  Hindi is complete. Telugu and Odia cover the short strings
+  (nav, headings, labels, greeting) and need a native-speaker
+  proofread — every slot is commented in strings.js.
+
+  Still needing your input (class="tbd", dotted underline):
+    1. Degree years   — VTU dates absent from your LinkedIn export
+    2. Alloan.ai      — confirm the start month of the engagement
+    3. cv.pdf         — drop the file in this folder to arm the link
+  ─────────────────────────────────────────────────────────────
+-->
+</head>
+<body data-cc="91" data-p1="76070" data-p2="16555">
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#work" data-i18n="a11y.skip">Skip to the work</a>
+
+<header class="rail" id="rail">
+  <span class="rail-name">Sanyam Singh</span>
+  <nav class="rail-nav" aria-label="Sections">
+    <a href="#work" data-i18n="nav.work">work</a>
+    <a href="#startups" data-i18n="nav.startups">startups</a>
+    <a href="#history" data-i18n="nav.history">history</a>
+    <a href="#papers" data-i18n="nav.papers">papers</a>
+    <a href="#hello" data-i18n="nav.hello">hello</a>
+  </nav>
+
+
+  <button class="lamp" id="lamp" type="button" aria-label="Turn the desk lamp off">
+    <span aria-hidden="true" id="lamp-glyph">☀</span>
+  </button>
+</header>
+
+<p class="lang-note" id="langNote" hidden></p>
+
+<main>
+
+  <!-- ══════════ COVER ══════════ -->
+  <section class="cover">
+    <p class="stamp-date" data-i18n="cover.dateline">Bengaluru · notebook opened September 2026</p>
+
+    <div class="cover-grid">
+      <div class="cover-text">
+        <div class="greet">
+          <h1 class="hand-xl" id="greeting" data-i18n="cover.greeting">Hello</h1>
+          <div class="langs" role="group" aria-label="Page language">
+            <button type="button" class="lang is-on" data-lang="en" lang="en">EN</button>
+            <button type="button" class="lang" data-lang="hi" lang="hi">हिन्दी</button>
+            <button type="button" class="lang" data-lang="te" lang="te">తెలుగు</button>
+            <button type="button" class="lang" data-lang="or" lang="or">ଓଡ଼ିଆ</button>
+          </div>
+          <p class="hand-note langs-why" data-i18n="cover.langsWhy">choose your fighter</p>
+        </div>
+        <h2 class="myname">Sanyam&nbsp;Singh</h2>
+        <p class="typed role" data-i18n="cover.role">Lead ML · Digital Green · Founding AI Consultant · 8 years in</p>
+
+        <p class="lede" data-i18n="cover.lede">
+          I build AI systems for places where being wrong has a cost — and then
+          I try to break them before the world does. Eight years of it: LLM
+          alignment and evaluation, speech, agentic systems, computer vision.
+          I lead ML at Digital Green, and I help startups take AI from a
+          convincing demo to something that survives production.
+        </p>
+
+        <p class="cta">
+          <span data-i18n="cover.ctaText">Building something?</span>
+          <a href="#hello" data-i18n="cover.ctaLink">Let's talk about it →</a>
+        </p>
+
+        <p class="typed whereami">
+          <span class="ink-dot" aria-hidden="true"></span>
+          <span data-i18n="cover.place">Bengaluru, India</span> —
+          <a href="mailto:sanyam12sks@gmail.com" class="copy" data-copy="sanyam12sks@gmail.com">sanyam12sks@gmail.com</a>
+        </p>
+      </div>
+
+      <figure class="polaroid">
+        <span class="tape tape-tl" aria-hidden="true"></span>
+        <span class="tape tape-br" aria-hidden="true"></span>
+        <img src="portrait-320.jpg"
+             srcset="portrait-320.jpg 311w, portrait.jpg 623w"
+             sizes="(max-width: 52rem) 46vw, 240px"
+             width="623" height="640"
+             alt="Sanyam Singh, smiling at a forested mountain viewpoint"
+             decoding="async">
+        <figcaption class="hand-note" data-i18n="cover.caption">somewhere in the Western Ghats, off duty</figcaption>
+      </figure>
+    </div>
+
+    <ul class="cards" id="cards">
+      <li class="card">
+        <span class="card-num" data-count="8">0</span>
+        <span class="card-label typed" data-i18n="stat.years">years building ML</span>
+      </li>
+      <li class="card">
+        <span class="card-num" data-count="5">0</span>
+        <span class="card-label typed" data-i18n="stat.papers">papers published</span>
+      </li>
+      <li class="card">
+        <span class="card-num" data-count="42" data-suffix="%">0</span>
+        <span class="card-label typed" data-i18n="stat.wer">peak word-error cut</span>
+      </li>
+      <li class="card">
+        <span class="card-num" data-count="180">0</span>
+        <span class="card-label typed" data-i18n="stat.broke">ways I broke our chatbot</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ══════════ STARTUPS ══════════ -->
+  <section id="startups" class="leaf">
+    <div class="leaf-head">
+      <h2 class="hand-lg" data-i18n="startups.title">I help startups build</h2>
+      <p class="hand-note" data-i18n="startups.note">— advisory, hands on keyboard, not slideware</p>
+    </div>
+
+    <details class="flap reveal" id="flap">
+      <summary>
+        <span class="flap-lead" data-i18n="startups.lead">Currently advising one company, and I've done this a few times</span>
+        <span class="flap-cue typed" data-i18n="startups.cue">open</span>
+      </summary>
+
+      <div class="flap-body">
+        <article class="venture is-current">
+          <h3>
+            <a href="https://alloan.ai/">Alloan.ai</a>
+            <span class="venture-role typed" data-i18n="startups.alloan.role">Founding AI Consultant</span>
+          </h3>
+          <p data-i18n="startups.alloan.body">
+            AI analytics for lending, founded by Princeton PhDs. I build the AI
+            side of it: guided agents and workflows over ABF, their in-house
+            language for loan analytics, plus training models through agents.
+          </p>
+          <p class="venture-link typed">
+            <a href="https://alloan.ai/blog/verified-ai-code-execution" data-i18n="startups.alloan.link">how we verify AI-written code →</a>
+          </p>
+        </article>
+
+        <article class="venture">
+          <h3>
+            <a href="https://askria.ai/">askRIA</a>
+            <span class="venture-role typed" data-i18n="startups.ria.role">Stood up the ML function</span>
+          </h3>
+          <p data-i18n="startups.ria.body">
+            Decision infrastructure for private capital — AI due diligence and
+            deal management for funds and founders. I helped start their ML
+            wing and get it off the ground.
+          </p>
+        </article>
+
+        <article class="venture">
+          <h3>
+            <a href="https://www.linkedin.com/company/109465241/">MentorMate</a>
+            <span class="venture-role typed" data-i18n="startups.mentormate.role">Conversational AI</span>
+          </h3>
+          <p data-i18n="startups.mentormate.body">
+            Built the conversational AI behind their product.
+          </p>
+        </article>
+
+        <p class="hand-note flap-more" data-i18n="startups.more">
+          — and a handful of others over the years. Ask me.
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ══════════ WORK ══════════ -->
+  <section id="work" class="leaf">
+    <div class="leaf-head">
+      <h2 class="hand-lg" data-i18n="work.title">What I've been working on</h2>
+      <p class="hand-note" data-i18n="work.note">— the four things worth showing</p>
+    </div>
+
+    <article class="case reveal">
+      <span class="clip" aria-hidden="true"></span>
+      <header class="case-head">
+        <p class="typed case-idx" data-i18n="bihar.idx">Case 01 / 2026 / published / first author</p>
+        <h3 data-i18n="bihar.title">A small model that out-argues the frontier on Bihar's crops</h3>
+      </header>
+
+      <p data-i18n="bihar.body">
+        Ask a vanilla frontier model about a crop in Bihar and you get advice
+        that is fluent, generic and occasionally invented — the worst
+        combination when a wrong answer costs someone a harvest. So we split
+        the problem in two. A LoRA fine-tune on <em>golden facts</em> —
+        atomic, expert-verified units of agricultural knowledge — handles
+        recall. A separate stitching layer turns those facts into something a
+        farmer would actually want to read: culturally appropriate, safety-aware,
+        plain. Fine-tuning lifted fact recall and F1 substantially, and the
+        stitching layer pushed the safety subscores up without flattening the
+        conversation.
+      </p>
+
+      <figure class="flow" aria-label="Architecture: expert-curated golden facts feed a LoRA fine-tune for fact recall, whose output passes through a stitching layer that produces a culturally appropriate, safety-aware reply. DG-EVAL verifies atomic facts against expert ground truth.">
+        <div class="flow-row">
+          <span class="node"><span class="node-k typed">input</span><span data-i18n="bihar.n1">golden facts</span></span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="node"><span class="node-k typed">LoRA SFT</span><span data-i18n="bihar.n2">fact recall</span></span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="node"><span class="node-k typed">stitching</span><span data-i18n="bihar.n3">safe, plain reply</span></span>
+        </div>
+        <p class="hand-note" data-i18n="bihar.flowNote">
+          — scored by DG-EVAL against expert ground truth, not Wikipedia
+        </p>
+      </figure>
+
+      <p class="typed small" data-i18n="bihar.foot">
+        The headline: a fine-tuned smaller model reaches comparable or better
+        factual quality than frontier models, at a fraction of the cost. The
+        farmerchat-prompts library is released with the paper.
+      </p>
+
+      <footer class="case-foot">
+        <ul class="chips"><li>LoRA</li><li>SFT</li><li>evaluation</li><li>Bihar</li></ul>
+        <a class="pill" href="https://arxiv.org/abs/2603.03294" data-i18n="bihar.link">read the paper →</a>
+      </footer>
+    </article>
+
+    <article class="case reveal">
+      <span class="clip" aria-hidden="true"></span>
+      <header class="case-head">
+        <p class="typed case-idx" data-i18n="voice.idx">Case 02 / 2026 / published</p>
+        <h3 data-i18n="voice.title">Teaching a machine to hear a farmer over a running tractor</h3>
+      </header>
+
+      <p data-i18n="voice.body">
+        Field recordings are a mess: machinery, a TV in the next room, three
+        people talking at once, and vocabulary no general ASR model has met —
+        the crop, pest, chemical and quantity words that carry the whole meaning
+        of the question. We built a pipeline that fixes the transcription
+        <em>without</em> retraining the ASR model underneath it: gated audio
+        enhancement, diarization that picks out the farmer and discards the
+        bystanders, domain-aware correction against a weighted agricultural
+        lexicon, and a quality gate that flags transcripts nobody should trust.
+        Only the diarization stage is fine-tuned.
+      </p>
+
+      <figure class="chart">
+        <figcaption class="typed chart-title" data-i18n="voice.chartTitle">Word error rate, reduced — relative %</figcaption>
+        <div class="bars" role="img" aria-label="Word error rate reductions: cloud ASR models 16 to 23 percent on the full corpus and 32 to 42 percent on multi-speaker recordings; the on-device model 5 percent on the full corpus and 16 percent on multi-speaker recordings.">
+          <div class="bar-row">
+            <span class="bar-name typed"><span data-i18n="chart.cloud">cloud ASR</span><br><small data-i18n="chart.full">full corpus</small></span>
+            <span class="bar-track"><span class="bar-range" data-from="16" data-to="23"></span></span>
+            <span class="bar-val typed">16–23%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name typed"><span data-i18n="chart.cloud">cloud ASR</span><br><small data-i18n="chart.multi">multi-speaker</small></span>
+            <span class="bar-track"><span class="bar-range is-hero" data-from="32" data-to="42"></span></span>
+            <span class="bar-val typed">32–42%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name typed"><span data-i18n="chart.device">on-device</span><br><small data-i18n="chart.full">full corpus</small></span>
+            <span class="bar-track"><span class="bar-range" data-from="0" data-to="5"></span></span>
+            <span class="bar-val typed">5%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name typed"><span data-i18n="chart.device">on-device</span><br><small data-i18n="chart.multi">multi-speaker</small></span>
+            <span class="bar-track"><span class="bar-range" data-from="0" data-to="16"></span></span>
+            <span class="bar-val typed">16%</span>
+          </div>
+          <div class="bar-axis typed"><span>0</span><span>15</span><span>30</span><span>45</span></div>
+        </div>
+        <p class="hand-note chart-note" data-i18n="voice.chartNote">the big one is diarization — just picking the right speaker</p>
+      </figure>
+
+      <p class="typed small" data-i18n="voice.foot">
+        Tested on human-annotated Hindi, Telugu and Odia recordings. All
+        reductions statistically significant.
+      </p>
+
+      <footer class="case-foot">
+        <ul class="chips"><li>ASR</li><li>diarization</li><li>multilingual</li><li>pipelines</li></ul>
+        <a class="pill" href="https://arxiv.org/abs/2609.20504" data-i18n="voice.link">read the paper →</a>
+      </footer>
+    </article>
+
+    <article class="case reveal">
+      <span class="clip" aria-hidden="true"></span>
+      <header class="case-head">
+        <p class="typed case-idx" data-i18n="red.idx">Case 03 / 2026</p>
+        <h3 data-i18n="red.title">180 ways to make a farming assistant misbehave</h3>
+      </header>
+
+      <p data-i18n="red.body">
+        I spent a while trying to break our own production chatbot on purpose:
+        180 adversarial prompts across 17 categories of risk. It worked more
+        often than I'd like. Restricted agrochemicals could be coaxed out with
+        the right framing. Refusals that held firm in English went soft in other
+        languages. And nothing was checking the model's output on the way back
+        out. Every finding left with a mitigation and a regression test attached,
+        which is the only part that actually counts.
+      </p>
+
+      <figure class="tally-wrap">
+        <div class="tally" id="tally" role="img" aria-label="180 adversarial prompts grouped across 17 risk categories."></div>
+        <figcaption class="hand-note" data-i18n="red.tallyCaption">180 prompts · 17 categories</figcaption>
+      </figure>
+
+      <footer class="case-foot">
+        <ul class="chips"><li>red teaming</li><li>safety evals</li><li>multilingual</li><li>guardrails</li></ul>
+        <a class="pill" href="https://github.com/sanyam-singh/security_evals_fc_agentic" data-i18n="red.link">the test suite →</a>
+      </footer>
+    </article>
+
+    <article class="case reveal">
+      <span class="clip" aria-hidden="true"></span>
+      <header class="case-head">
+        <p class="typed case-idx" data-i18n="uda.idx">Case 04 / 2021–22 / IISc</p>
+        <h3 data-i18n="uda.title">Before the language models, I taught machines to see</h3>
+      </header>
+
+      <p data-i18n="uda.body">
+        A segmentation model trained on video-game streets is confident and
+        wrong the moment it meets a real one. At the Video Analytics Lab under
+        Dr. R. Venkatesh Babu I worked on closing that gap without a single
+        labelled real image: train on synthetic GTA5 and SYNTHIA frames,
+        validate on real Cityscapes streets, and write losses aimed squarely at
+        the distance between them. Partial learning from pretrained weights
+        pulled the target-domain error down further.
+      </p>
+
+      <div class="case-split">
+      <figure class="shot">
+        <span class="tape tape-tl" aria-hidden="true"></span>
+        <picture>
+          <source srcset="segmentation.webp" type="image/webp">
+          <img src="segmentation.jpg" width="496" height="279" loading="lazy" decoding="async"
+               alt="A semantic segmentation map of a street scene: road in purple, pavement in magenta, cars in blue, cyclists and pedestrians in red, buildings in grey, sky in blue.">
+        </picture>
+        <figcaption class="hand-note" data-i18n="uda.shotCaption">every pixel given a class — road, pavement, car, person. the model has never seen a real street.</figcaption>
+      </figure>
+      <figure class="flow" aria-label="Domain adaptation: models trained on synthetic GTA5 and SYNTHIA imagery are adapted with custom losses and partial learning from pretrained weights, then validated on real Cityscapes street scenes.">
+        <div class="flow-row">
+          <span class="node node-synth">
+            <span class="node-k typed" data-i18n="uda.k1">synthetic</span>
+            <span>GTA5 · SYNTHIA</span>
+          </span>
+          <span class="gap" aria-hidden="true">
+            <span class="gap-line"></span>
+            <span class="gap-label typed" data-i18n="uda.gap">domain gap</span>
+          </span>
+          <span class="node node-real">
+            <span class="node-k typed" data-i18n="uda.k2">real</span>
+            <span>Cityscapes</span>
+          </span>
+        </div>
+        <p class="hand-note" data-i18n="uda.flowNote">
+          — custom losses + partial learning from pretrained weights, no real labels
+        </p>
+      </figure>
+      </div>
+
+      <footer class="case-foot">
+        <ul class="chips"><li>computer vision</li><li>domain adaptation</li><li>custom losses</li></ul>
+      </footer>
+    </article>
+  </section>
+
+  <!-- ══════════ HISTORY — span chart ══════════ -->
+  <section id="history" class="leaf">
+    <div class="leaf-head">
+      <h2 class="hand-lg" data-i18n="history.title">Where I've been</h2>
+      <p class="hand-note" data-i18n="history.note">— tap any row to open it. Overlaps are real; I was doing two things at once.</p>
+    </div>
+
+    <div class="chartwrap reveal" id="spanChart">
+      <div class="span-axis typed" aria-hidden="true">
+        <span>2019</span><span>2020</span><span>2021</span><span>2022</span>
+        <span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+      </div>
+
+      <div class="spans">
+        <details class="span-row" data-kind="industry" data-from="2025.2" data-to="2027" data-domain="Generative AI · LLM training & evaluation">
+          <summary>
+            <span class="span-label">
+              <strong>Digital Green</strong>
+              <span class="span-domain typed" aria-hidden="true">Generative AI · LLM training & evaluation</span>
+              <span class="span-role typed">Lead ML</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.dg">Agentic AI frameworks, supervised fine-tuning and evaluation, with the World Bank, OpenAI, Harvard and MIT.</p>
+        </details>
+
+                <details class="span-row" data-kind="industry" data-from="2024.7" data-to="2025.1" data-domain="Generative AI · LLM fine-tuning">
+          <summary>
+            <span class="span-label">
+              <strong>Scrut Automation</strong>
+              <span class="span-domain typed" aria-hidden="true">Generative AI · LLM fine-tuning</span>
+              <span class="span-role typed">Senior ML Engineer</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.scrut">Built V2 from nothing and led five people to the company's first AI product.</p>
+        </details>
+
+        <details class="span-row" data-kind="industry" data-from="2022.5" data-to="2024.7" data-domain="Generative AI · NLP">
+          <summary>
+            <span class="span-label">
+              <strong>MeetRecord</strong>
+              <span class="span-domain typed" aria-hidden="true">Generative AI · NLP</span>
+              <span class="span-role typed">Lead ML, then Core ML Engineer</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.meetrecord">Owned every AI and NLP service end to end — coaching insights, GPT-powered query resolution, pitch generation, bottleneck detection, keyword discovery.</p>
+        </details>
+
+        <details class="span-row" data-kind="research" data-from="2021.5" data-to="2022.5" data-domain="Computer Vision">
+          <summary>
+            <span class="span-label">
+              <strong>Indian Institute of Science</strong>
+              <span class="span-domain typed" aria-hidden="true">Computer Vision</span>
+              <span class="span-role typed">Researcher · Video Analytics Lab</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.iisc">Unsupervised domain adaptation under Dr. R. Venkatesh Babu — synthetic-to-real segmentation, custom losses for the domain gap, partial learning from pretrained weights.</p>
+        </details>
+
+        <details class="span-row" data-kind="research" data-from="2020.4" data-to="2022.4" data-domain="Computer Vision · Statistics">
+          <summary>
+            <span class="span-label">
+              <strong>SVAG Research Lab</strong>
+              <span class="span-domain typed" aria-hidden="true">Computer Vision · Statistics</span>
+              <span class="span-role typed">Research Assistant</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.svag">Statistics, ML and computer vision under Dr. Savita Choudhary; co-authored RainRoof.</p>
+        </details>
+
+        <details class="span-row" data-kind="industry" data-from="2020.5" data-to="2021.5" data-domain="Biosignals · ECG">
+          <summary>
+            <span class="span-label">
+              <strong>Brain Media</strong>
+              <span class="span-domain typed" aria-hidden="true">Biosignals · ECG</span>
+              <span class="span-role typed">ML Engineer · Mexico</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.brain">Stress estimation and atrial-fibrillation detection from ECG, for a biofeedback device.</p>
+        </details>
+
+        <details class="span-row" data-kind="industry" data-from="2019.5" data-to="2020.5" data-domain="Computer Vision">
+          <summary>
+            <span class="span-label">
+              <strong>Umoove</strong>
+              <span class="span-domain typed" aria-hidden="true">Computer Vision</span>
+              <span class="span-role typed">ML Engineer · Israel</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.umoove">Rebuilt eye tracking on a Siamese architecture: 35% faster, 20% better validation accuracy.</p>
+        </details>
+
+        <details class="span-row" data-kind="internship" data-from="2019.85" data-to="2020.05" data-domain="Computer Vision">
+          <summary>
+            <span class="span-label">
+              <strong>Inkers Technology</strong>
+              <span class="span-domain typed" aria-hidden="true">Computer Vision</span>
+              <span class="span-role typed">Deep Learning Engineer · internship</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.inkers">Custom ResNet estimating attributes across a 10,000-person dataset.</p>
+        </details>
+
+        <details class="span-row" data-kind="internship" data-from="2019.35" data-to="2019.55" data-domain="Computer Vision">
+          <summary>
+            <span class="span-label">
+              <strong>nFactorial Analytical Sciences</strong>
+              <span class="span-domain typed" aria-hidden="true">Computer Vision</span>
+              <span class="span-role typed">ML Engineer · internship</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.nfactorial">Hand-built CNNs for emotion classification, 91% accurate.</p>
+        </details>
+
+        <details class="span-row" data-kind="internship" data-from="2019.0" data-to="2019.35" data-domain="Computer Vision">
+          <summary>
+            <span class="span-label">
+              <strong>Omdena</strong>
+              <span class="span-domain typed" aria-hidden="true">Computer Vision</span>
+              <span class="span-role typed">Data Engineer · internship</span>
+            </span>
+            <span class="span-track"><span class="span-bar"></span></span>
+          </summary>
+          <p data-i18n="span.omdena">CNNs for forest-fire detection; the thing still runs.</p>
+        </details>
+      </div>
+
+      <ul class="legend typed" aria-hidden="true">
+        <li><span class="key k-industry"></span><span data-i18n="legend.industry">industry</span></li>
+        <li><span class="key k-research"></span><span data-i18n="legend.research">research</span></li>
+        <li><span class="key k-internship"></span><span data-i18n="legend.internship">internship</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════ PAPERS ══════════ -->
+  <section id="papers" class="leaf">
+    <div class="leaf-head">
+      <h2 class="hand-lg" data-i18n="papers.title">Things I helped write</h2>
+      <p class="hand-note" data-i18n="papers.note">— five of them, newest first</p>
+    </div>
+
+    <ul class="clippings reveal">
+      <li class="clipping is-fresh">
+        <span class="seal" aria-hidden="true">arXiv<br>2609<br>·20504</span>
+        <a class="clip-title" href="https://arxiv.org/abs/2609.20504">Model-Agnostic and Language-Agnostic Voice Pipeline Improvement for the Agriculture Domain</a>
+        <p class="clip-authors">Aakash Singh, Lakshmi Pedapudi, Chandrashekar M S, <strong>Sanyam Singh</strong>, Naga Ganesh, Vineet Singh</p>
+        <p class="typed clip-meta">arXiv:2609.20504 · September 2026 · eess.AS</p>
+      </li>
+
+      <li class="clipping is-fresh">
+        <span class="seal seal-first" aria-hidden="true"><span data-i18n="papers.firstAuthor">first<br>author</span></span>
+        <a class="clip-title" href="https://arxiv.org/abs/2603.03294">Fine-Tuning and Evaluating Conversational AI for Agricultural Advisory</a>
+        <p class="clip-authors"><strong>Sanyam Singh</strong>, Naga Ganesh, Vineet Singh, Lakshmi Pedapudi, Ritesh Kumar, SSP Jyothi, Archana Karanam, Waseem Pasha, Ekta Kumari, C. Yashoda, Mettu Vijaya Rekha Reddy, Shesha Phani Debbesa, Chandan Dash</p>
+        <p class="typed clip-meta">arXiv:2603.03294 · February 2026 · cs.CL</p>
+      </li>
+
+      <li class="clipping">
+        <a class="clip-title" href="https://agdevresearch.org/index.php/aad/article/view/625">Application of reinforcement learning from human feedback for localizing quality agricultural advice using generative AI</a>
+        <p class="clip-authors">Vineet Singh, <strong>Sanyam Singh</strong>, Lakshmi Pedapudi, Waseem Pasha, Ekta Kumari, Rikin Gandhi, Alesha Miller, Jona Repishti, Archana Karanam, Eric Firnhaber</p>
+        <p class="typed clip-meta">Advancements in Agricultural Development · 7(2), 50–59 · January 2026</p>
+      </li>
+
+      <li class="clipping">
+        <a class="clip-title" href="https://link.springer.com/chapter/10.1007/978-981-15-8677-4_9">RainRoof: Automated Shared Rainwater Harvesting Prediction</a>
+        <p class="clip-authors">Vipul Gaurav, Vishal Vinod, <strong>Sanyam Kumar Singh</strong>, Tushar Sharma, K. R. Pradyumna, Savita Choudhary</p>
+        <p class="typed clip-meta">Springer · Lecture Notes on Data Engineering &amp; Communications Technologies · 2021 · 105–122</p>
+      </li>
+
+      <li class="clipping">
+        <a class="clip-title" href="https://www.ijert.org/research/accident-detection-severity-prediction-identification-of-accident-prone-areas-in-india-and-feasibility-study-using-improved-image-segmentation-machine-learning-and-sensors-IJERTV8IS100164.pdf">Accident Detection, Severity Prediction, Identification of Accident Prone Areas in India and Feasibility Study using Improved Image Segmentation, Machine Learning and Sensors</a>
+        <p class="clip-authors">Vipul Gaurav, <strong>Sanyam Kumar Singh</strong>, Avikant Srivastava</p>
+        <p class="typed clip-meta">IJERT · Vol. 8 Issue 10 · October 2019</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ══════════ MARGINS ══════════ -->
+  <section id="about" class="leaf">
+    <div class="leaf-head">
+      <h2 class="hand-lg" data-i18n="about.title">A bit more, if you're still here</h2>
+    </div>
+
+    <div class="margins reveal">
+      <div class="ruled">
+        <p data-i18n="about.p1">
+          I came into this from computer vision — domain adaptation, ECG
+          signals, eye tracking — and spent the years since owning AI products
+          end to end, prototype through production. What I like now is the
+          unglamorous half: the judges, the adversarial batteries, the
+          preference data. The measurement apparatus is what separates a demo
+          from something a farmer can lean on, and almost nobody wants to build
+          it.
+        </p>
+        <p data-i18n="about.p2">
+          A farmer asking which pesticide to spray on a dying crop needs an
+          answer that is right, in her own language, and honest when it doesn't
+          know. Most of my job is finding out which of those three we just
+          broke.
+        </p>
+        <p data-i18n="about.p3">
+          Outside of that: mountains, film cameras, and an ongoing argument with
+          myself about whether evaluation is a science yet.
+        </p>
+      </div>
+
+      <dl class="spec">
+        <dt class="typed" data-i18n="spec.studied">studied</dt>
+        <dd>BE Information Technology, Visvesvaraya Technological University</dd>
+        <dt class="typed" data-i18n="spec.works">works in</dt>
+        <dd data-i18n="spec.worksVal">LLM evaluation &amp; alignment · agentic systems · multilingual safety · speech</dd>
+        <dt class="typed" data-i18n="spec.tools">reaches for</dt>
+        <dd>Python · PyTorch · TensorFlow · Claude &amp; OpenAI APIs</dd>
+        <dt class="typed" data-i18n="spec.speaks">speaks</dt>
+        <dd data-i18n="spec.speaksVal">English · Hindi</dd>
+      </dl>
+
+      <ul class="stickies">
+        <li class="sticky s1"><span class="typed sticky-tag">2019</span><span data-i18n="award.nasa">NASA Space Apps Challenge — Karnataka winner</span></li>
+        <li class="sticky s2"><span class="typed sticky-tag">2018</span><span data-i18n="award.ideate">Ideate — winner</span></li>
+        <li class="sticky s3"><span class="typed sticky-tag">—</span><span data-i18n="award.buildathon">Build-A-thon — first runner up</span></li>
+        <li class="sticky s4"><span class="typed sticky-tag">—</span><span data-i18n="award.finalist">Finalist: IIM Bangalore NSRCEL &amp; Rehack IncubateIND</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════ HELLO ══════════ -->
+  <section id="hello" class="leaf leaf-last">
+    <div class="torn reveal">
+      <h2 class="hand-lg" data-i18n="hello.title">Say hello</h2>
+      <p class="hand-note" data-i18n="hello.note">— building something, or want a second pair of eyes on it? I answer to all of these.</p>
+
+      <ul class="reach">
+        <li id="waRow" hidden>
+          <a href="#" class="hand-md" id="waLink" data-i18n="reach.whatsappText">WhatsApp me</a>
+          <span class="typed reach-tag" data-i18n="reach.whatsapp">fastest way to reach me</span>
+        </li>
+        <li id="phoneRow" hidden>
+          <button type="button" class="hand-md as-link" id="phoneBtn" data-i18n="reach.phoneReveal">tap to show my number</button>
+          <span class="typed reach-tag" data-i18n="reach.phone">phone</span>
+        </li>
+        <li>
+          <a href="mailto:sanyam12sks@gmail.com" class="copy hand-md" data-copy="sanyam12sks@gmail.com">sanyam12sks@gmail.com</a>
+          <span class="typed reach-tag" data-i18n="reach.email">email · click to copy</span>
+        </li>
+        <li>
+          <a href="https://github.com/Sanyam8055" class="hand-md">github.com/Sanyam8055</a>
+          <span class="typed reach-tag" data-i18n="reach.code">code</span>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sanyam12/" class="hand-md">linkedin.com/in/sanyam12</a>
+          <span class="typed reach-tag" data-i18n="reach.linkedin">the formal one</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/search/?searchtype=author&amp;query=Sanyam+Singh" class="hand-md">arXiv preprints</a>
+          <span class="typed reach-tag" data-i18n="reach.papers">both of them</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="typed" data-i18n="footer.left">Written by hand, more or less. No framework, no tracking, no cookie banner.</span>
+  <span class="typed">© <span id="year">2026</span> Sanyam Singh</span>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>copied</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sanyam Singh",
+  "jobTitle": "Lead ML",
+  "worksFor": { "@type": "Organization", "name": "Digital Green" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+  "email": "mailto:sanyam12sks@gmail.com",
+  "knowsAbout": ["Machine learning", "Large language models", "LLM evaluation", "Speech recognition", "Computer vision", "AI consulting"],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Visvesvaraya Technological University" },
+  "sameAs": ["https://github.com/Sanyam8055", "https://www.linkedin.com/in/sanyam12/", "https://arxiv.org/abs/2609.20504", "https://arxiv.org/abs/2603.03294"]
+}
+</script>
+
+<script src="strings.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
