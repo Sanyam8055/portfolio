@@ -273,7 +273,7 @@
     var d = document.body.dataset;
     if (!d.cc || !d.p1 || !d.p2) return;
 
-    var digits = d.cc + d.p1 + d.p2;            /* 917607016555 */
+    var digits = d.cc + d.p1 + d.p2;            /* country + two halves */
     var pretty = '+' + d.cc + ' ' + d.p1 + ' ' + d.p2;
 
     var waRow = document.getElementById('waRow');
