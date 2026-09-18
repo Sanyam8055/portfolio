@@ -22,6 +22,7 @@ window.STRINGS = {
 
   /* ─────────────────────────── ENGLISH ─────────────────────── */
   en: {
+    "cover.name": "Sanyam&nbsp;Singh",
     "activity.summit.link": "announcement \u2192",
     "activity.pairs.paper": "the paper \u2192",
     "activity.pairs.event": "the symposium \u2192",
@@ -41,7 +42,7 @@ window.STRINGS = {
     "reach.phone": "phone",
     "reach.whatsapp": "fastest way to reach me",
     "a11y.skip": "Skip to the work",
-    "cover.langsWhy": "choose your fighter",
+    "cover.langsWhy": "the languages our voice pipeline is tested in",
     "stat.wer": "peak word-error cut",
     "uda.shotCaption": "every pixel given a class \u2014 road, pavement, car, person. the model has never seen a real street.",
 
@@ -171,6 +172,7 @@ window.STRINGS = {
 
   /* ─────────────────────────── हिन्दी ──────────────────────── */
   hi: {
+    "cover.name": "\u0938\u0902\u092f\u092e \u0938\u093f\u0902\u0939",
     "activity.summit.link": "\u0918\u094b\u0937\u0923\u093e \u2192",
     "activity.pairs.paper": "\u092a\u0947\u092a\u0930 \u2192",
     "activity.pairs.event": "\u0938\u093f\u092e\u094d\u092a\u094b\u091c\u093f\u092f\u092e \u2192",
@@ -193,7 +195,7 @@ window.STRINGS = {
     "a11y.skip": "काम पर जाएँ",
     "red.body": "मैंने काफ़ी समय जान-बूझकर अपने ही प्रोडक्शन चैटबॉट को तोड़ने में लगाया: 17 जोखिम श्रेणियों में 180 एडवर्सेरियल प्रॉम्प्ट। यह उम्मीद से ज़्यादा बार काम कर गया। सही तरीके से पूछने पर प्रतिबंधित कृषि-रसायनों की जानकारी निकल आती थी। जो इनकार अंग्रेज़ी में मज़बूत थे, वे दूसरी भाषाओं में कमज़ोर पड़ जाते थे। और लौटते हुए आउटपुट को कोई जाँच ही नहीं रहा था। हर निष्कर्ष के साथ एक उपाय और एक रिग्रेशन टेस्ट भी गया — असल में वही हिस्सा मायने रखता है।",
     "voice.body": "खेत की रिकॉर्डिंग अस्त-व्यस्त होती है: मशीनों का शोर, बगल के कमरे में चलता टीवी, एक साथ बोलते तीन लोग, और ऐसे शब्द जो किसी सामान्य ASR मॉडल ने कभी सुने ही नहीं — फसल, कीट, रसायन और मात्रा के वे शब्द जिन पर पूरे सवाल का अर्थ टिका होता है। हमने एक ऐसी पाइपलाइन बनाई जो नीचे चल रहे ASR मॉडल को दोबारा ट्रेन किए <em>बिना</em> ट्रांसक्रिप्शन सुधारती है: गेटेड ऑडियो एन्हांसमेंट, डायराइज़ेशन जो किसान की आवाज़ चुनकर बाकी को हटा देता है, कृषि शब्दकोश के आधार पर सुधार, और एक क्वालिटी गेट जो भरोसे लायक न होने वाले ट्रांसक्रिप्ट पर निशान लगा देता है। सिर्फ़ डायराइज़ेशन को फाइन-ट्यून किया गया है।",
-    "cover.langsWhy": "जो दिल कहे",
+    "cover.langsWhy": "\u091c\u093f\u0928 \u092d\u093e\u0937\u093e\u0913\u0902 \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0940 \u0935\u0949\u092f\u0938 \u092a\u093e\u0907\u092a\u0932\u093e\u0907\u0928 \u092a\u0930\u0916\u0940 \u0917\u0908 \u0939\u0948",
     "stat.wer": "सबसे बड़ी वर्ड एरर कटौती",
     "uda.shotCaption": "हर पिक्सल को एक वर्ग — सड़क, फुटपाथ, कार, इंसान। मॉडल ने कभी असली सड़क देखी ही नहीं।",
 
@@ -322,6 +324,8 @@ window.STRINGS = {
   /* Body prose deliberately omitted: it falls back to English    */
   /* until a native speaker reviews. Add keys here to extend.     */
   te: {
+    "stat.wer": "\u0c17\u0c30\u0c3f\u0c37\u0c4d\u0c1f \u0c2a\u0c26 \u0c26\u0c4b\u0c37 \u0c24\u0c17\u0c4d\u0c17\u0c41\u0c26\u0c32",
+    "cover.name": "\u0c38\u0c28\u0c4d\u0c2f\u0c3e\u0c2e\u0c4d \u0c38\u0c3f\u0c02\u0c17\u0c4d",
     "nav.activity": "\u0c15\u0c3e\u0c30\u0c4d\u0c2f\u0c15\u0c32\u0c3e\u0c2a\u0c3e\u0c32\u0c41",
     "activity.title": "\u0c2c\u0c2f\u0c1f\u0c3f \u0c2a\u0c4d\u0c30\u0c2a\u0c02\u0c1a\u0c02\u0c32\u0c4b",
     "nav.work": "పని",
@@ -333,7 +337,7 @@ window.STRINGS = {
     "cover.greeting": "నమస్కారం",
     "cover.place": "బెంగళూరు, భారతదేశం",
     "cover.ctaText": "ఏదైనా నిర్మిస్తున్నారా?",
-    "cover.langsWhy": "మీ ఇష్టం",
+    "cover.langsWhy": "\u0c2e\u0c3e \u0c35\u0c3e\u0c2f\u0c3f\u0c38\u0c4d \u0c2a\u0c48\u0c2a\u0c4d\u200c\u0c32\u0c48\u0c28\u0c4d \u0c2a\u0c30\u0c40\u0c15\u0c4d\u0c37\u0c3f\u0c02\u0c1a\u0c3f\u0c28 \u0c2d\u0c3e\u0c37\u0c32\u0c41",
 
     "stat.years": "సంవత్సరాల ML అనుభవం",
     "stat.papers": "ప్రచురించిన పత్రాలు",
@@ -364,6 +368,8 @@ window.STRINGS = {
   /* ─────────────────── ଓଡ଼ିଆ — short strings only ───────────── */
   /* Same as Telugu: headings and labels only, pending review.   */
   or: {
+    "stat.wer": "\u0b38\u0b30\u0b4d\u0b2c\u0b3e\u0b27\u0b3f\u0b15 \u0b36\u0b2c\u0b4d\u0b26 \u0b24\u0b4d\u0b30\u0b41\u0b1f\u0b3f \u0b39\u0b4d\u0b30\u0b3e\u0b38",
+    "cover.name": "\u0b38\u0b28\u0b4d\u0b5f\u0b2e \u0b38\u0b3f\u0b02",
     "nav.activity": "\u0b15\u0b3e\u0b30\u0b4d\u0b2f\u0b4d\u0b5f\u0b15\u0b32\u0b3e\u0b2a",
     "activity.title": "\u0b2c\u0b3e\u0b39\u0b3e\u0b30 \u0b26\u0b41\u0b28\u0b3f\u0b06\u0b30\u0b47",
     "nav.work": "କାମ",
@@ -375,7 +381,7 @@ window.STRINGS = {
     "cover.greeting": "ନମସ୍କାର",
     "cover.place": "ବେଙ୍ଗାଲୁରୁ, ଭାରତ",
     "cover.ctaText": "କିଛି ତିଆରି କରୁଛନ୍ତି?",
-    "cover.langsWhy": "ଆପଣଙ୍କ ଇଚ୍ଛା",
+    "cover.langsWhy": "\u0b06\u0b2e \u0b2d\u0b2f\u0b47\u0b38\u0b4d \u0b2a\u0b3e\u0b07\u0b2a\u0b32\u0b3e\u0b07\u0b28\u0b30\u0b47 \u0b2a\u0b30\u0b40\u0b15\u0b4d\u0b37\u0b3f\u0b24 \u0b2d\u0b3e\u0b37\u0b3e",
 
     "stat.years": "ବର୍ଷର ML ଅନୁଭବ",
     "stat.papers": "ପ୍ରକାଶିତ ଶୋଧପତ୍ର",

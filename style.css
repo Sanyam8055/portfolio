@@ -24,9 +24,13 @@
   --marker:    #ffe98a;   /* highlighter */
   --tape:      #e8dcc0;
 
-  --hand:  "Kalam", "Bradley Hand", cursive;
-  --typed: "Courier Prime", ui-monospace, Menlo, monospace;
-  --read:  "Newsreader", Georgia, serif;
+  /* Noto sits at the END of each stack: Latin keeps Kalam /
+     Courier / Newsreader, and Telugu + Odia glyphs fall through
+     to Noto per-glyph. Never override font-family by :lang() —
+     that cascades to the whole page and flattens the design. */
+  --hand:  "Kalam", "Noto Sans Telugu", "Noto Sans Oriya", "Bradley Hand", cursive;
+  --typed: "Courier Prime", ui-monospace, Menlo, "Noto Sans Telugu", "Noto Sans Oriya", monospace;
+  --read:  "Newsreader", "Noto Sans Telugu", "Noto Sans Oriya", Georgia, serif;
 
   --measure: 34rem;
   --wide:    58rem;
@@ -556,14 +560,10 @@ footer .typed { text-transform: none; letter-spacing: .02em; font-size: .66rem; 
 .lang.is-on { background: var(--pen); border-color: var(--pen); color: var(--paper); }
 .lang:focus-visible { outline: 2px solid var(--pen); outline-offset: 2px; }
 
-/* scripts that Kalam doesn't cover get their own face */
-:lang(te), :lang(te) .hand-xl, :lang(te) .hand-lg, :lang(te) .hand-note {
-  font-family: "Noto Sans Telugu", "Newsreader", sans-serif;
-}
-:lang(or), :lang(or) .hand-xl, :lang(or) .hand-lg, :lang(or) .hand-note {
-  font-family: "Noto Sans Oriya", "Newsreader", sans-serif;
-}
-:lang(te) .typed, :lang(or) .typed { text-transform: none; }
+/* Indic scripts have no small-caps convention, so drop the
+   uppercasing on typewriter labels. Fonts are handled by the
+   fallback stacks above, not by overriding font-family here. */
+:lang(te) .typed, :lang(or) .typed, :lang(hi) .typed { text-transform: none; }
 
 .lang-note {
   max-width: var(--wide); margin: .6rem auto 0; padding: .5rem .7rem;

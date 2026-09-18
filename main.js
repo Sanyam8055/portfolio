@@ -289,29 +289,30 @@
     if (!phoneRow || !btn) return;
     phoneRow.hidden = false;
 
-    btn.addEventListener('click', function () {
-      var a = document.createElement('a');
-      a.className = 'copy hand-md';
-      a.href = 'tel:+' + digits;
-      a.textContent = pretty;
-      a.dataset.copy = '+' + digits;
-      a.addEventListener('click', function (ev) {
-        if (ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
-        if (!navigator.clipboard) return;
-        ev.preventDefault();
-        navigator.clipboard.writeText(a.dataset.copy)
-          .then(function () { flash('copied'); })
-          .catch(function () { window.location.href = a.href; });
-      });
-      btn.replaceWith(a);
-
-      var tag = phoneRow.querySelector('.reach-tag');
-      if (tag) {
-        var table = STRINGS[root.getAttribute('lang')] || STRINGS.en;
-        tag.textContent = table['reach.phoneCopy'] || STRINGS.en['reach.phoneCopy'];
-        tag.removeAttribute('data-i18n');     /* it has moved past its key */
-      }
+    /* Shown straight away. The digits still never appear in the
+       served HTML - they are assembled here - but a visitor does
+       not have to click to see them. */
+    var a = document.createElement('a');
+    a.className = 'copy hand-md';
+    a.href = 'tel:+' + digits;
+    a.textContent = pretty;
+    a.dataset.copy = '+' + digits;
+    a.addEventListener('click', function (ev) {
+      if (ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
+      if (!navigator.clipboard) return;
+      ev.preventDefault();
+      navigator.clipboard.writeText(a.dataset.copy)
+        .then(function () { flash('copied'); })
+        .catch(function () { window.location.href = a.href; });
     });
+    btn.replaceWith(a);
+
+    var tag = phoneRow.querySelector('.reach-tag');
+    if (tag) {
+      var table = STRINGS[root.getAttribute('lang')] || STRINGS.en;
+      tag.textContent = table['reach.phoneCopy'] || STRINGS.en['reach.phoneCopy'];
+      tag.dataset.i18n = 'reach.phoneCopy';
+    }
   })();
 
 
