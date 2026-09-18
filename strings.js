@@ -22,10 +22,11 @@ window.STRINGS = {
 
   /* ─────────────────────────── ENGLISH ─────────────────────── */
   en: {
+    "activity.summit.link": "announcement \u2192",
     "activity.pairs.paper": "the paper \u2192",
     "activity.pairs.event": "the symposium \u2192",
     "activity.pairs.watch": "watch the talk \u2192",
-    "activity.pairs.meta": "Talk with Jona Repishti \u00b7 PAIRS India, 18 February 2026 \u00b7 Participatory AI Research &amp; Practice Symposium",
+    "activity.pairs.meta": "Talk with Sanyam and Jona Repishti \u00b7 PAIRS India, 18 February 2026 \u00b7 Participatory AI Research &amp; Practice Symposium",
     "activity.pairs.title": "Reinforcement Learning from Human Feedback for Localizing Quality Agricultural Advice using Gen AI",
     "nav.activity": "activity",
     "activity.title": "Out in the world",
@@ -170,10 +171,11 @@ window.STRINGS = {
 
   /* ─────────────────────────── हिन्दी ──────────────────────── */
   hi: {
+    "activity.summit.link": "\u0918\u094b\u0937\u0923\u093e \u2192",
     "activity.pairs.paper": "\u092a\u0947\u092a\u0930 \u2192",
     "activity.pairs.event": "\u0938\u093f\u092e\u094d\u092a\u094b\u091c\u093f\u092f\u092e \u2192",
     "activity.pairs.watch": "\u091f\u0949\u0915 \u0926\u0947\u0916\u0947\u0902 \u2192",
-    "activity.pairs.meta": "\u091c\u094b\u0928\u093e \u0930\u0947\u092a\u093f\u0936\u094d\u091f\u0940 \u0915\u0947 \u0938\u093e\u0925 \u091f\u0949\u0915 \u00b7 PAIRS India, 18 \u092b\u093c\u0930\u0935\u0930\u0940 2026 \u00b7 Participatory AI Research &amp; Practice Symposium",
+    "activity.pairs.meta": "\u0938\u0902\u092f\u092e \u0914\u0930 \u091c\u094b\u0928\u093e \u0930\u0947\u092a\u093f\u0936\u094d\u091f\u0940 \u0915\u0947 \u0938\u093e\u0925 \u091f\u0949\u0915 \u00b7 PAIRS India, 18 \u092b\u093c\u0930\u0935\u0930\u0940 2026 \u00b7 Participatory AI Research &amp; Practice Symposium",
     "activity.pairs.title": "\u092e\u093e\u0928\u0935 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u0938\u0947 \u0930\u093f\u0907\u0902\u092b\u094b\u0930\u094d\u0938\u092e\u0947\u0902\u091f \u0932\u0930\u094d\u0928\u093f\u0902\u0917: \u091c\u0947\u0928\u0947\u0930\u0947\u091f\u093f\u0935 AI \u0938\u0947 \u0915\u0943\u0937\u093f \u0938\u0932\u093e\u0939 \u0915\u093e \u0938\u094d\u0925\u093e\u0928\u0940\u092f\u0915\u0930\u0923",
     "nav.activity": "\u0917\u0924\u093f\u0935\u093f\u0927\u093f",
     "activity.title": "\u092c\u093e\u0939\u0930 \u0915\u0940 \u0926\u0941\u0928\u093f\u092f\u093e \u092e\u0947\u0902",
