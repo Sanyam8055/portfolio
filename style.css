@@ -483,7 +483,27 @@ footer .typed { text-transform: none; letter-spacing: .02em; font-size: .66rem; 
 @media (max-width: 34rem) {
   body { background-size: 22px 22px, 22px 22px; }
   .cover-grid { grid-template-columns: 1fr; }
-  .polaroid { order: -1; width: clamp(130px, 42vw, 175px); margin-bottom: .5rem; }
+  /* Landscape card instead of a narrow portrait with dead
+     space beside it: small photo left, handwritten note right. */
+  .polaroid {
+    order: -1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    padding: 10px 12px;
+    margin-bottom: 1.2rem;
+    transform: rotate(-.7deg);
+  }
+  .polaroid img { width: 108px; flex: none; }
+  .polaroid figcaption {
+    flex: 1; min-width: 0;
+    padding: 0; text-align: left;
+    transform: rotate(-.5deg);
+    font-size: .97rem; line-height: 1.3;
+  }
+  .polaroid .tape-tl { top: -10px; left: -14px; }
+  .polaroid .tape-br { bottom: -9px; right: -14px; top: auto; }
   .hand-xl { font-size: clamp(2.7rem, 17vw, 4rem); }
   .cards { gap: .7rem; }
   .card { padding: .9rem .7rem .8rem; }
@@ -687,9 +707,26 @@ footer .typed { text-transform: none; letter-spacing: .02em; font-size: .66rem; 
 }
 
 @media (max-width: 40rem) {
-  .rail { flex-wrap: wrap; row-gap: .5rem; }
-  .rail-nav { order: 3; width: 100%; margin-left: 0; justify-content: space-between; }
-  .langs { margin-left: auto; }
+  /* the invisible sticky name was reserving half the row and
+     pushing the lamp into the middle; drop it on narrow. */
+  .rail-name { display: none; }
+  .rail { flex-wrap: nowrap; gap: .5rem; }
+  .rail-nav {
+    flex: 1; min-width: 0; margin-left: 0;
+    gap: .32rem;
+    font-size: .6rem;
+    /* six items are a squeeze at 360px: let them scroll rather
+       than wrap into a ragged second row */
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    /* if it does scroll (very narrow phones), fade the edge so it
+       reads as more-to-swipe rather than a clipped word */
+    -webkit-mask-image: linear-gradient(to right, #000 88%, transparent);
+    mask-image: linear-gradient(to right, #000 88%, transparent);
+  }
+  .rail-nav::-webkit-scrollbar { display: none; }
+  .rail-nav a { white-space: nowrap; }
   .chartwrap { --span-label: 100%; }
   .span-axis { margin-left: 0; }
   .span-row > summary { grid-template-columns: 1fr; gap: .4rem; }
