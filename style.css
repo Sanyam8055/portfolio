@@ -913,3 +913,6 @@ footer .typed { text-transform: none; letter-spacing: .02em; font-size: .66rem; 
     padding: 0 0 .5rem;
   }
 }
+
+/* several links in one activity entry */
+.gig-link { display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
