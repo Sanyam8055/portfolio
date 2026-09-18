@@ -22,6 +22,15 @@ window.STRINGS = {
 
   /* ─────────────────────────── ENGLISH ─────────────────────── */
   en: {
+    "nav.activity": "activity",
+    "activity.title": "Out in the world",
+    "activity.note": "\u2014 talks, rooms I have stood in front of, and the odd masterclass",
+    "activity.summit.title": "Making Generative AI Work for Farmers: Aligning Agricultural AI with Human Feedback",
+    "activity.summit.meta": "60-minute masterclass \u00b7 India AI Impact Summit 2026 \u00b7 JAN AI Pavilion, Bharat Mandapam, New Delhi",
+    "activity.summit.body": "A session on what it actually takes to make generative AI safe, actionable and context-aware for farming advice \u2014 and on deploying Farmer.Chat, which reaches smallholder farmers through text, voice and photographs. <span class=\"tbd\" title=\"Confirm: did you present, co-present, or organise?\">Role to confirm.</span>",
+    "activity.summit.link": "the announcement \u2192",
+    "activity.pairs.body": "<span class=\"tbd\" title=\"Two or three lines from you and this is done\">Tell me what PAIRS Global is and what you do with them, and this fills in.</span>",
+    "activity.pairs.link": "their page \u2192",
     "reach.phoneCopy": "phone · click to copy",
     "reach.phoneReveal": "tap to show my number",
     "reach.whatsappText": "WhatsApp me",
@@ -158,6 +167,15 @@ window.STRINGS = {
 
   /* ─────────────────────────── हिन्दी ──────────────────────── */
   hi: {
+    "nav.activity": "\u0917\u0924\u093f\u0935\u093f\u0927\u093f",
+    "activity.title": "\u092c\u093e\u0939\u0930 \u0915\u0940 \u0926\u0941\u0928\u093f\u092f\u093e \u092e\u0947\u0902",
+    "activity.note": "\u2014 \u091f\u0949\u0915, \u092e\u0902\u091a, \u0914\u0930 \u0915\u092d\u0940-\u0915\u092d\u093e\u0930 \u092e\u093e\u0938\u094d\u091f\u0930\u0915\u094d\u0932\u093e\u0938",
+    "activity.summit.title": "\u0915\u093f\u0938\u093e\u0928\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u091c\u0947\u0928\u0947\u0930\u0947\u091f\u093f\u0935 AI: \u0915\u0943\u0937\u093f AI \u0915\u094b \u092e\u093e\u0928\u0935 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u0938\u0947 \u0905\u0932\u093e\u0907\u0928 \u0915\u0930\u0928\u093e",
+    "activity.summit.meta": "60 \u092e\u093f\u0928\u091f \u0915\u093e \u092e\u093e\u0938\u094d\u091f\u0930\u0915\u094d\u0932\u093e\u0938 \u00b7 India AI Impact Summit 2026 \u00b7 \u092d\u093e\u0930\u0924 \u092e\u0902\u0921\u092a\u092e, \u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940",
+    "activity.summit.body": "\u0916\u0947\u0924\u0940 \u0915\u0940 \u0938\u0932\u093e\u0939 \u0915\u0947 \u0932\u093f\u090f \u091c\u0947\u0928\u0947\u0930\u0947\u091f\u093f\u0935 AI \u0915\u094b \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924, \u0909\u092a\u092f\u094b\u0917\u0940 \u0914\u0930 \u0938\u0902\u0926\u0930\u094d\u092d-\u0938\u091c\u0917 \u092c\u0928\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093e\u0915\u093c\u0908 \u0915\u094d\u092f\u093e \u0932\u0917\u0924\u093e \u0939\u0948 \u2014 \u0914\u0930 Farmer.Chat \u0915\u094b \u0924\u0948\u0928\u093e\u0924 \u0915\u0930\u0928\u0947 \u092a\u0930, \u091c\u094b \u091f\u0947\u0915\u094d\u0938\u094d\u091f, \u0906\u0935\u093e\u091c\u093c \u0914\u0930 \u0924\u0938\u094d\u0935\u0940\u0930\u094b\u0902 \u0915\u0947 \u091c\u093c\u0930\u093f\u090f \u0915\u093f\u0938\u093e\u0928\u094b\u0902 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u0924\u093e \u0939\u0948\u0964 <span class=\"tbd\" title=\"Confirm: did you present, co-present, or organise?\">\u092d\u0942\u092e\u093f\u0915\u093e \u0938\u094d\u092a\u0937\u094d\u091f \u0915\u0930\u0928\u0940 \u0939\u0948\u0964</span>",
+    "activity.summit.link": "\u0918\u094b\u0937\u0923\u093e \u0926\u0947\u0916\u0947\u0902 \u2192",
+    "activity.pairs.body": "<span class=\"tbd\" title=\"Two or three lines from you and this is done\">PAIRS Global \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u0906\u092a \u0909\u0928\u0915\u0947 \u0938\u093e\u0925 \u0915\u094d\u092f\u093e \u0915\u0930\u0924\u0947 \u0939\u0948\u0902 \u2014 \u092c\u0924\u093e\u0907\u090f, \u092f\u0939 \u092d\u0930 \u091c\u093e\u090f\u0917\u093e\u0964</span>",
+    "activity.pairs.link": "\u0909\u0928\u0915\u093e \u092a\u0947\u091c\u093c \u2192",
     "red.link": "टेस्ट सूट →",
     "reach.phoneCopy": "फ़ोन · कॉपी करने के लिए क्लिक करें",
     "reach.phoneReveal": "नंबर देखने के लिए टैप करें",
@@ -296,6 +314,8 @@ window.STRINGS = {
   /* Body prose deliberately omitted: it falls back to English    */
   /* until a native speaker reviews. Add keys here to extend.     */
   te: {
+    "nav.activity": "\u0c15\u0c3e\u0c30\u0c4d\u0c2f\u0c15\u0c32\u0c3e\u0c2a\u0c3e\u0c32\u0c41",
+    "activity.title": "\u0c2c\u0c2f\u0c1f\u0c3f \u0c2a\u0c4d\u0c30\u0c2a\u0c02\u0c1a\u0c02\u0c32\u0c4b",
     "nav.work": "పని",
     "nav.startups": "స్టార్టప్‌లు",
     "nav.history": "అనుభవం",
@@ -336,6 +356,8 @@ window.STRINGS = {
   /* ─────────────────── ଓଡ଼ିଆ — short strings only ───────────── */
   /* Same as Telugu: headings and labels only, pending review.   */
   or: {
+    "nav.activity": "\u0b15\u0b3e\u0b30\u0b4d\u0b2f\u0b4d\u0b5f\u0b15\u0b32\u0b3e\u0b2a",
+    "activity.title": "\u0b2c\u0b3e\u0b39\u0b3e\u0b30 \u0b26\u0b41\u0b28\u0b3f\u0b06\u0b30\u0b47",
     "nav.work": "କାମ",
     "nav.startups": "ଷ୍ଟାର୍ଟଅପ୍",
     "nav.history": "ଅନୁଭବ",

@@ -869,3 +869,47 @@ footer .typed { text-transform: none; letter-spacing: .02em; font-size: .66rem; 
 }
 .as-link:hover { color: var(--pen); border-bottom-color: var(--pen); }
 .as-link:focus-visible { outline: 2px solid var(--pen); outline-offset: 3px; }
+
+/* ── activity: dated entries with a stamped date block ──── */
+.gigs { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.2rem; }
+.gig {
+  display: grid;
+  grid-template-columns: 4.2rem 1fr;
+  gap: 1.3rem;
+  background: var(--card);
+  border: 1px solid var(--edge);
+  border-radius: 3px;
+  padding: 1.1rem 1.3rem;
+  box-shadow: 0 8px 22px -18px rgba(0,0,0,.5);
+}
+.gig-when {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  gap: .1rem; padding-top: .15rem;
+  border-right: 1px dashed var(--edge);
+  padding-right: 1rem;
+}
+.gig-month {
+  font-size: .82rem; letter-spacing: .06em; color: var(--stamp);
+  text-transform: uppercase; font-weight: 700;
+}
+.gig-year { font-size: .66rem; letter-spacing: .08em; color: var(--ink-faint); }
+.gig-what { min-width: 0; }
+.gig-what h3 {
+  margin: 0 0 .4rem;
+  font-family: var(--read); font-weight: 450;
+  font-size: 1.14rem; line-height: 1.3; letter-spacing: -.01em;
+  text-wrap: pretty;
+}
+.gig-meta { display: block; margin: 0 0 .6rem; text-transform: none; letter-spacing: .02em; font-size: .67rem; width: fit-content; }
+.gig-what > p { margin: 0 0 .5rem; color: var(--ink-soft); font-size: .97rem; max-width: var(--measure); }
+.gig-link { margin: .5rem 0 0 !important; text-transform: none; letter-spacing: .02em; font-size: .7rem; }
+.gig-link a { color: var(--pen); border-bottom-color: var(--pen); }
+
+@media (max-width: 34rem) {
+  .gig { grid-template-columns: 1fr; gap: .5rem; }
+  .gig-when {
+    flex-direction: row; align-items: baseline; gap: .4rem;
+    border-right: 0; border-bottom: 1px dashed var(--edge);
+    padding: 0 0 .5rem;
+  }
+}
